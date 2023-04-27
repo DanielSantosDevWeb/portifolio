@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
-  background-color: aqua;
+  background-color:#E4E8F2 ;
   
   }
 
