@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import LogoImg from '../../images/logo.png'
-import { LogoStyled } from './ImgStyles'
+import { ImgStyle } from './ImgStyles'
 
 
 export const Logo = () => (
-  <LogoStyled>
+  <ImgStyle wid='70px'>
 
     <Link to='/'> <img src={LogoImg} alt="" /> </Link>
-  </LogoStyled>
+  </ImgStyle>
 )

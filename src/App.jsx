@@ -12,6 +12,7 @@ import Home from './components/pages/Home'
 import Contact from './components/pages/Contact'
 import Projects from './components/pages/Projects'
 import { LinksNavStyle } from './components/components/LinksNavStyle'
+import Sobre from './components/pages/Sobre'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,9 +42,9 @@ function App() {
         <NavBar>
           <Logo></Logo>
           <LinksNavStyle>
-            <li><Link to='/' > Home </Link></li>
-            <li><Link to='/projects' > Projects </Link></li>
-            <li><Link to='/contact' > contato </Link></li>
+            <li><Link to='/' > Inicio </Link></li>
+            <li><Link to='/projects' > Projetos </Link></li>
+            <li><Link to='/sobre' > Sobre </Link></li>
           </LinksNavStyle>
           <Redes width={RedesWidth} translateY={RedesTransl}  >
             <Lista ModRedes={modificarRedes} arrow={Arrow} />
@@ -53,12 +54,15 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/projects' element={<Projects />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/sobre' element={<Sobre />} />
           </Routes>
         </Container>
 
         <Footer>
-          footer
+          <p>aa</p>
+          <p>aa</p>
+          <p>aaa</p>
+          <p>aaa</p>
         </Footer>
       </Body>
     </>

@@ -6,5 +6,7 @@ export const NavBar = styled.nav`
   align-items: center;
   background-color: ${({ theme }) => theme.colors.darkblue};
   color: white;
-  height: 100px;
+  min-height: 90px;
+  max-height: 90px;
+  padding: 0px 3%;
 `

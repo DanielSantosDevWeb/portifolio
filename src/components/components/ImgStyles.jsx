@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-export const LogoStyled = styled.div`
+export const ImgStyle = styled.div`
 
   img {
-    width: 70px;
+    width: ${({ wid }) => wid} ;
+    
   }
 `
