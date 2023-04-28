@@ -1,7 +1,11 @@
+import { ProjetcsStyle } from "./ProjectsStyled";
+
 export default function Projects() {
   return (
-    <div>
-      Prorjee
-    </div>
+    <>
+      <ProjetcsStyle>
+        Prorjee
+      </ProjetcsStyle>
+    </>
   )
 }

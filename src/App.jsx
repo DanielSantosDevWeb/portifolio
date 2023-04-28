@@ -40,14 +40,14 @@ function App() {
     <>
       <Body>
         <NavBar>
-          <Logo></Logo>
+          <Logo />
           <LinksNavStyle>
             <li><Link to='/' > Inicio </Link></li>
             <li><Link to='/projects' > Projetos </Link></li>
             <li><Link to='/sobre' > Sobre </Link></li>
           </LinksNavStyle>
           <Redes width={RedesWidth} translateY={RedesTransl}  >
-            <Lista ModRedes={modificarRedes} arrow={Arrow} />
+            <Lista ModRedes={modificarRedes} arrow={Arrow} arrowShow={true} />
           </Redes>
         </NavBar>
         <Container>
@@ -59,10 +59,12 @@ function App() {
         </Container>
 
         <Footer>
-          <p>aa</p>
-          <p>aa</p>
-          <p>aaa</p>
-          <p>aaa</p>
+          <div>
+            <Lista arrowShow={false} />
+          </div>
+          <p>
+            <span>2023 copyrigth &copy; N1el_s10</span>
+          </p>
         </Footer>
       </Body>
     </>

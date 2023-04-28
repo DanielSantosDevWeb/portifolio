@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const Body = styled.body`
-  height: 100vh;
+export const Body = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
+  
 `
