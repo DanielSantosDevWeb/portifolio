@@ -31,7 +31,7 @@ function App() {
     } else {
       setArrow(!Arrow)
       setRedeswidth('200px')
-      setRedesTransl('80px')
+      setRedesTransl('79px')
       setRedesAberto(!RedesAberto)
     }
   }
@@ -46,7 +46,7 @@ function App() {
             <li><Link to='/projects' > Projetos </Link></li>
             <li><Link to='/sobre' > Sobre </Link></li>
           </LinksNavStyle>
-          <Redes width={RedesWidth} translateY={RedesTransl}  >
+          <Redes width={RedesWidth} translateY={RedesTransl} className='redes' >
             <Lista ModRedes={modificarRedes} arrow={Arrow} arrowShow={true} />
           </Redes>
         </NavBar>
@@ -56,16 +56,17 @@ function App() {
             <Route path='/projects' element={<Projects />} />
             <Route path='/sobre' element={<Sobre />} />
           </Routes>
+          {/* <Footer>
+            <div>
+              <Lista arrowShow={false} />
+            </div>
+            <p>
+              <span>2023 copyrigth &copy; N1el_s10</span>
+            </p>
+          </Footer> */}
         </Container>
 
-        <Footer>
-          <div>
-            <Lista arrowShow={false} />
-          </div>
-          <p>
-            <span>2023 copyrigth &copy; N1el_s10</span>
-          </p>
-        </Footer>
+
       </Body>
     </>
   )

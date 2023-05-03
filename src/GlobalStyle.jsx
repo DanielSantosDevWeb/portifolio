@@ -9,15 +9,15 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  :root {
+  #root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  height: 100vh;
-  background-color:#f7f7f7 ;
+  height: 100%;
+  
   
   }
 
-  html {
-    height: 1000px;
+  body, html {
+    background-color: #f4f4f4;
   }
 
   

@@ -7,4 +7,10 @@ export const HabilidadeStyled = styled.div`
   border-radius: 10px;
   background-color: #ffffff;
   max-width: 350px;
+  box-shadow: 2px 2px 10px #8080803b;
+  transition: .5s;
+
+  :hover {
+    box-shadow: none;
+  }
 `

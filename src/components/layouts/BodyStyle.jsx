@@ -5,4 +5,5 @@ export const Body = styled.div`
   flex-direction: column;
   height: 100%;
   
+  
 `

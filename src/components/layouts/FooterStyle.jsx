@@ -4,6 +4,7 @@ export const Footer = styled.footer`
   background-color: ${({ theme }) => theme.colors.darkblue} ;
   color: white;
   height: 100px;
+  width: 100%;
   
   div ul {
     display: flex;

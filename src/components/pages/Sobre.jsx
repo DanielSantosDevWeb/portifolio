@@ -8,12 +8,19 @@ import ImgNode from '../../images/logo-node.png'
 import ImgReact from '../../images/logo-react.png'
 import { HabilidadeStyled } from '../layouts/HabilidadesStyled'
 import { ImgStyle } from '../components/ImgStyles'
+import SobreMin from '../components/SobreMin'
 
 function Sobre() {
   return (
     <SobreStyle>
-      <h1>Sobre</h1>
+      <div className='sobreMin' >
+        <SobreMin />
+      </div>
+
+
+
       <div className='habilidades' >
+        <h2>Habilidades</h2>
         <HabilidadeStyled>
           <ImgStyle wid='50%' > <img src={ImgHtml} alt="" /> </ImgStyle>
           <p> Aprendizagem na linguagem <span>Html</span>, como a parte semantica do html e responsiva, criaçoes de formularios e tabelas. </p>
@@ -21,7 +28,7 @@ function Sobre() {
 
         <HabilidadeStyled>
           <ImgStyle wid='50%' > <img src={ImgCss} alt="" /> </ImgStyle>
-          <p> Avançado na linguagem <span>Css</span>, com criaçoes de sites respinsivos para mobile a tv, animaçoes, displays entres outras.  </p>
+          <p> Avançado na linguagem <span>Css</span>, com criaçoes de sites responsivos para mobile a tv, animaçoes, displays entres outras.  </p>
         </HabilidadeStyled>
 
         <HabilidadeStyled>
@@ -41,10 +48,10 @@ function Sobre() {
 
         <HabilidadeStyled>
           <ImgStyle wid='50%' > <img src={ImgGit} alt="" /> </ImgStyle>
-          <p>Sei o basico e Git, clanar repositorios com o git clone, publicar projeto ou app com p git push, git commit para salvar entre outras funçoes.</p>
+          <p>Sei o basico e Git, clonar repositorios com o git clone, publicar projeto ou app com o git push, git commit para salvar entre outras funçoes.</p>
         </HabilidadeStyled>
       </div>
-    </SobreStyle>
+    </SobreStyle >
   )
 }
 
