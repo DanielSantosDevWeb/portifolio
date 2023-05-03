@@ -20,7 +20,7 @@ export const SobreStyle = styled.div`
     display: flex;
     flex-direction: column;
     
-    margin: 0 20px;
+    margin: 20px ;
     max-width: 1000px;
 
     span {
@@ -32,6 +32,10 @@ export const SobreStyle = styled.div`
     
     h2 {
       font-size: 2em;
+    }
+
+    .sobreMin {
+      margin: 20px auto;
     }
 
   }

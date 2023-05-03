@@ -19,4 +19,9 @@ export const Habilidades = styled.div`
       
     }
 
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1200px;
+    }
+
 `
