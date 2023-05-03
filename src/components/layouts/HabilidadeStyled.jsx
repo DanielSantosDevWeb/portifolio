@@ -13,4 +13,10 @@ export const HabilidadeStyled = styled.div`
   :hover {
     box-shadow: none;
   }
+
+  @media screen and (min-width: 770px) {
+    margin: auto;
+    height: 280px;
+  }
+
 `

@@ -6,8 +6,6 @@ export default function Lista({ ModRedes, arrow, arrowShow }) {
 
   const [width, setWidth] = useState(window.innerWidth)
 
-  //const [arrowShow, setArrowShow] = useState(true)
-
   addEventListener('resize', () => setWidth(window.innerWidth))
 
   return (

@@ -24,6 +24,9 @@ export default function Projects() {
   const [CodClimatico] = useState('https://github.com/DanielSantosDevWeb/Projetos/tree/main/clima_tempo')
   const [CodEcommerce] = useState('https://github.com/DanielSantosDevWeb/Projetos/tree/main/Site%20vendas')
 
+  const [width, setWidth] = useState(window.innerWidth)
+
+  addEventListener('resize', () => setWidth(window.innerWidth))
 
   const abrirUrl = (url) => {
     window.open(url)
@@ -32,14 +35,17 @@ export default function Projects() {
   return (
     <>
       <ProjetcsStyle>
+        {width > 1200 ? <h1>Projetos</h1> : null}
         <Projeto>
           <div className="bloco" >
-            <h3>Projeto costs</h3>
-            <a href={UrlProjetoCosts} target="_blank"> <ImgStyle wid='90%' > <img src={projetoCostsImg} alt="" /> </ImgStyle>
+            {width > 1200 ? null : <h3>Projeto costs</h3>}
+            <a href={UrlProjetoCosts} target="_blank"> <ImgStyle wid='90%' bordRad='15px' > <img src={projetoCostsImg} alt="" /> </ImgStyle>
             </a>
           </div>
 
           <div className="bloco" >
+
+            {width > 1200 ? <h3>Projeto costs</h3> : null}
             <p>O Projeto Costs eh um projeto completo, ele eh um criador de projetos para <span>logisticas de empresas</span>. Usei varios recuros <span>React</span> e o <span>Json-Server</span> para o <span>Back-end</span>, Tambem o <span>React-router-dom</span> para as rotas, e o <span>React-icons</span> para icones, Podemos Criar, Editar e
               Deletar os projetos.  </p>
             <div>
@@ -53,12 +59,14 @@ export default function Projects() {
         <Projeto>
 
           <div className="bloco">
-            <h3>Site Climatico</h3>
+
+            {width > 1200 ? null : <h3>Site Climatico</h3>}
             <a href={UrlClimatico} target="_blank" >
-              <ImgStyle wid='90%' > <img src={ClimaTempoImg} alt="" /> </ImgStyle> </a>
+              <ImgStyle wid='90%' bordRad='15px' > <img src={ClimaTempoImg} alt="" /> </ImgStyle> </a>
           </div>
 
           <div className="bloco">
+            {width > 1200 ? <h3>Site Climatico</h3> : null}
             <p>Um site mais simples, que mostra informaçoes de <span>clima e tempo </span> da sua cidade aovivo. O site foi criado com uma api free do site <span>OpenWeather</span>, Usei <span>JavaScript</span> para chamar a API, faço uma desestruturaçao e pego so os dados nescessario e mostro na tela com <span>HTML e CSS.</span> </p>
 
             <div>
@@ -71,12 +79,14 @@ export default function Projects() {
         </Projeto>
         <Projeto>
           <div className="bloco">
-            <h3>Site Sobre Android</h3>
+
+            {width > 1200 ? null : <h3>Site Sobre Android</h3>}
             <a href={UrlAndroid} target="_blank" >
-              <ImgStyle wid='90%' > <img src={SiteAndroidImg} alt="" /> </ImgStyle> </a>
+              <ImgStyle wid='90%' bordRad='15px' > <img src={SiteAndroidImg} alt="" /> </ImgStyle> </a>
           </div>
 
           <div className="bloco">
+            {width > 1200 ? <h3>Site Sobre Android</h3> : null}
             <p>
               Esse eh um site que fala um pouco do Sitema <span>Android</span>, Criado totalmete com <span>HTML e CSS</span>, O objetivo principal foi criar um site totalmete <span>Responsivo</span>, com responsividade ate nas <span>Imagens</span>, e fique bem fatisfeito com o resultado.
             </p>
@@ -92,12 +102,14 @@ export default function Projects() {
 
         <Projeto>
           <div className="bloco">
-            <h3>Site E-Commerce</h3>
+            {width > 1200 ? null : <h3>Site E-Commerce</h3>}
+
             <a href={UrlEcommerce} target="_blank" >
-              <ImgStyle wid='90%' > <img src={SiteEcommerce} alt="" /> </ImgStyle> </a>
+              <ImgStyle wid='90%' bordRad='15px' > <img src={SiteEcommerce} alt="" /> </ImgStyle> </a>
           </div>
 
           <div className="bloco">
+            {width > 1200 ? <h3>Site E-Commerce</h3> : null}
             <p>
               Site que simula um <span>E-Commerce</span>, Site Bem simples com o objetivo de ser <span>Responsivo</span> e ter o display <span>Grid</span>. Feito com <span>HTML e CSS</span>, Um dos primeiros sites que criei.
             </p>
@@ -111,12 +123,14 @@ export default function Projects() {
         </Projeto>
         <Projeto>
           <div className="bloco">
-            <h3>Calculadora</h3>
+            {width > 1200 ? null : <h3>Calculadora</h3>}
+
             <a href={UrlCalculadora} target="_blank" >
-              <ImgStyle wid='90%' > <img src={Calculadora} alt="" /> </ImgStyle> </a>
+              <ImgStyle wid='90%' bordRad='15px' > <img src={Calculadora} alt="" /> </ImgStyle> </a>
           </div>
 
           <div className="bloco">
+            {width > 1200 ? <h3>Calculadora</h3> : null}
             <p>
               Uma calculadora simples e funcional, Criei ela com <span>HTML e CSS</span>, e usei o <span>JavaScript</span> para adicionar funçoes, parecia bem simples mas foi bem desafiador pois foi criada <span>totalmente</span> do 0.
             </p>
