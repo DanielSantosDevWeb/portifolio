@@ -250,7 +250,7 @@ Error generating stack: `+o.message+`
       min-width: 300px;
     }
   }
-`;function Pg(){return p.jsxs(Eg,{children:[p.jsx("h1",{children:"Bem Vindo ao meu Portifolio"}),p.jsx(Ge,{wid:"200px",children:p.jsx("img",{src:kg,alt:""})}),p.jsxs("p",{children:["Ola Desenvolvedores!! Sejam Bem Vindo ao meu ",p.jsx("span",{children:"portifolio"}),"... aqui voçe encontra mais sobre mim, as ",p.jsx("span",{children:"tecnologias"})," que ultilizo e meus intereses na progamaçao, Tambem tem a aba com meus ",p.jsx("span",{children:"projetos"})," e ",p.jsx("span",{children:"contatos"}),"."]})]})}const jg=Ve.section`
+`;function Pg(){return p.jsxs(Eg,{children:[p.jsx("h1",{children:"Bem Vindo ao meu Portfolio"}),p.jsx(Ge,{wid:"200px",children:p.jsx("img",{src:kg,alt:""})}),p.jsxs("p",{children:["Ola Desenvolvedores!! Sejam Bem Vindo ao meu ",p.jsx("span",{children:"portfolio"}),"... aqui voçe encontra mais sobre mim, as ",p.jsx("span",{children:"tecnologias"})," que ultilizo e meus intereses na progamaçao, Tambem tem a aba com meus ",p.jsx("span",{children:"projetos"})," e ",p.jsx("span",{children:"contatos"}),"."]})]})}const jg=Ve.section`
   display: grid;
   gap: 30px;
 
