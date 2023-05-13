@@ -11,6 +11,11 @@ export const Projeto = styled.div`
     font-weight: 700;
   }
 
+  a {
+    font-weight: 700;
+    color: #000000;
+  }
+
   .bloco {
     display: flex;
     flex-direction: column;

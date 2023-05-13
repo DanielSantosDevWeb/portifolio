@@ -5,6 +5,7 @@ import ClimaTempoImg from '../../images/projetos/ClimaTempo.png'
 import SiteAndroidImg from '../../images/projetos/SiteAndroid.png'
 import SiteEcommerce from '../../images/projetos/SiteEcommerce.png'
 import Calculadora from '../../images/projetos/Calculadora.png'
+import RickAndMortyImg from '../../images/projetos/RickAndMorty.png'
 import { Projeto } from "../layouts/ProjetoStyle";
 import { Button } from "../components/Button";
 
@@ -17,12 +18,14 @@ export default function Projects() {
   const [UrlAndroid] = useState("https://danielsantosdevweb.github.io/Projetos/Site%20Android/")
   const [UrlEcommerce] = useState("https://danielsantosdevweb.github.io/Projetos/Site%20vendas/")
   const [UrlCalculadora] = useState("https://danielsantosdevweb.github.io/Projetos/Site%20calculadora/")
+  const [UrlRickAndMorty] = useState("https://danielsantosdevweb.github.io/RickAndMorty")
 
   const [CodProjetoCosts] = useState('https://github.com/DanielSantosDevWeb/projeto-costs')
   const [CodAndroid] = useState('https://github.com/DanielSantosDevWeb/Projetos/tree/main/Site%20Android')
   const [CodCalculadora] = useState('https://github.com/DanielSantosDevWeb/Projetos/tree/main/Site%20calculadora')
   const [CodClimatico] = useState('https://github.com/DanielSantosDevWeb/Projetos/tree/main/clima_tempo')
   const [CodEcommerce] = useState('https://github.com/DanielSantosDevWeb/Projetos/tree/main/Site%20vendas')
+  const [CodRickAndMorty] = useState('https://github.com/DanielSantosDevWeb/RickAndMorty')
 
   const [width, setWidth] = useState(window.innerWidth)
 
@@ -56,6 +59,27 @@ export default function Projects() {
           </div>
 
         </Projeto>
+
+        <Projeto>
+          <div className="bloco" >
+            {width > 1200 ? null : <h3>Rick And Morty Api</h3>}
+            <a href={UrlRickAndMorty} target="_blank"> <ImgStyle wid='90%' bordRad='15px' > <img src={RickAndMortyImg} alt="" /> </ImgStyle>
+            </a>
+          </div>
+
+          <div className="bloco" >
+
+            {width > 1200 ? <h3>Rick And Morty Api</h3> : null}
+            <p> Nesse <span>projeto</span> tentei usar o maximo dessa api... nas <span>proximas versões</span> pretendo adicionar a mais infos sobre os mundos e <span>todos</span> os personagens que moram nele. Criei esse projeto com o <span>ReactJs</span> e usando o <span>Stiled Components</span> para estilizaçao. Usei a <a href="https://rickandmortyapi.com/">Api Rick And Morty</a> para receber todos os dados. </p>
+            <div>
+              <Button onClick={() => abrirUrl(CodRickAndMorty)} >Codigo</Button>
+              <Button onClick={() => abrirUrl(UrlRickAndMorty)} >Site</Button>
+
+            </div>
+          </div>
+
+        </Projeto>
+
         <Projeto>
 
           <div className="bloco">
@@ -99,28 +123,6 @@ export default function Projects() {
           </div>
         </Projeto>
 
-
-        <Projeto>
-          <div className="bloco">
-            {width > 1200 ? null : <h3>Site E-Commerce</h3>}
-
-            <a href={UrlEcommerce} target="_blank" >
-              <ImgStyle wid='90%' bordRad='15px' > <img src={SiteEcommerce} alt="" /> </ImgStyle> </a>
-          </div>
-
-          <div className="bloco">
-            {width > 1200 ? <h3>Site E-Commerce</h3> : null}
-            <p>
-              Site que simula um <span>E-Commerce</span>, Site Bem simples com o objetivo de ser <span>Responsivo</span> e ter o display <span>Grid</span>. Feito com <span>HTML e CSS</span>, Um dos primeiros sites que criei.
-            </p>
-
-            <div>
-              <Button onClick={() => abrirUrl(CodEcommerce)} >Codigo</Button>
-              <Button onClick={() => abrirUrl(UrlEcommerce)} >Site</Button>
-
-            </div>
-          </div>
-        </Projeto>
         <Projeto>
           <div className="bloco">
             {width > 1200 ? null : <h3>Calculadora</h3>}

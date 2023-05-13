@@ -9,7 +9,7 @@ export default function SobreMin() {
 
       <h2>Interesses</h2>
 
-      <p>Trabalhar como progamador, desenvolvendo progamas na parte do <span>Front-end</span> com <span>Html, Css, JavaScript e ReactJs</span> , sites <span>responsivo </span>com codigos rápidos e limpos.</p>
+      <p>Trabalhar como progamador, desenvolvendo progamas na parte do <span>Front-end</span> com <span>ReactJs</span>, ou <span>Html, Css, JavaScript</span> , sites totalmentes <span>Responsivo </span>com codigos rápidos e limpos.</p>
 
     </>
   )
